@@ -9,12 +9,18 @@
     "email": "me@mikkoh.com",
     "url": "https://github.com/mikkoh"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ease-preview": "^1.0.2"
+  },
   "devDependencies": {
+    "budo": "^8.0.4",
+    "ease-preview": "^1.0.0",
+    "eases": "^1.0.8",
     "tape": "^4.4.0"
   },
   "scripts": {
-    "test": "node test/"
+    "test": "node test/",
+    "testBrowser": "budo test/ --live --open"
   },
   "keywords": [
     "easing,eases,penner,animation"

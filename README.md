@@ -8,10 +8,15 @@ This is a set of easing equations which are outside of standard Penner easing eq
 
 ### var stepped = require('fance-eases/stepped')([opt])
 
-Returns an easing function for stepped eases with the following optional options:
-- `steps` the number of steps you'd like to have
-- `ease` an ease equation which will modify the original steps
+![stepped](./images/stepped.png)
+*`Rendering with two steps`*
 
+![stepped expo](./images/steppedExpo.png)
+*`Rendering with two steps and ease expo`*
+
+Returns an easing function for stepped eases with the following optional options:
+- `steps` the number of steps you'd like to have. The above is with two steps. Default value `1`
+- `ease` an ease equation which will modify the original steps.
 
 [![NPM](https://nodei.co/npm/fancy-eases.png)](https://www.npmjs.com/package/fancy-eases)
 
