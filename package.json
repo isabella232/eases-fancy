@@ -1,0 +1,30 @@
+{
+  "name": "fancy-eases",
+  "version": "1.0.0",
+  "description": "This is a set of easing equations which are outside of standard Penner easing equations",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Mikko Haapoja",
+    "email": "me@mikkoh.com",
+    "url": "https://github.com/mikkoh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.4.0"
+  },
+  "scripts": {
+    "test": "node test/"
+  },
+  "keywords": [
+    "easing,eases,penner,animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/fancy-eases.git"
+  },
+  "homepage": "https://github.com/Jam3/fancy-eases",
+  "bugs": {
+    "url": "https://github.com/Jam3/fancy-eases/issues"
+  }
+}
