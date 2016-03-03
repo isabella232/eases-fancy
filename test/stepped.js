@@ -3,6 +3,7 @@ var renderEase = require('./renderEase');
 var expo = require('eases/expo-in');
 var getSamples = require('./getSamples');
 var testFuzzyArray = require('test-fuzzy-array');
+var testStartEnd = require('./testStartEnd');
 
 var EXPECTED_EXPO = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.3,0.3,0.3,0.4,0.4,0.4,0.5,0.5,0.5,0.6,0.6,0.7,0.7,0.8,0.8,0.9,1];
 
@@ -17,18 +18,17 @@ module.exports = function(t) {
     ease: expo
   });
 
-  t.equal(nooptions(0), 0, '0 returns 0 for nooptions');
+  testStartEnd(t, nooptions, 'stepped nooptions');
   t.equal(nooptions(0.5), 0, '0.25 returns 0 for nooptions');
   t.equal(nooptions(0.5), 0, '0.5 returns 0 for nooptions');
   t.equal(nooptions(0.5), 0, '0.75 returns 0 for nooptions');
-  t.equal(nooptions(1), 1, '1 returns 1 for nooptions');
 
-  t.equal(twoStep(0), 0, '0 returns 0 for twoStep');
+  testStartEnd(t, twoStep, 'stepped twoStep');
   t.equal(twoStep(0.25), 0, '0.25 returns 0.25 for twoStep');
   t.equal(twoStep(0.5), 0.5, '0 returns 0 for twoStep');
   t.equal(twoStep(0.75), 0.5, '0.75 returns 0.5 for twoStep');
-  t.equal(twoStep(1), 1, '1 returns 1 for twoStep');
 
+  testStartEnd(t, expod, 'stepped expod');
   fuzzyTest(getSamples(expod, 100), EXPECTED_EXPO, 'custom ease with expo return correct values');
   
   renderEase(nooptions, 'stepped nooptions');

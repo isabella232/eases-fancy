@@ -3,6 +3,7 @@ var pointsRandom = require('../points-random');
 var quint = require('eases/quint-in');
 var getSamples = require('./getSamples');
 var testFuzzyArray = require('test-fuzzy-array');
+var testStartEnd = require('./testStartEnd');
 
 module.exports = function(t) {
   var randPoints = pointsRandom();
@@ -12,6 +13,11 @@ module.exports = function(t) {
   var randPointsTaperOut = pointsRandom({ taper: 'out', offset: 1, numPoints: 100 });
 
   t.ok(areClamped(getSamples(randPointsClamped, 100)), 'all points were clamped');
+  testStartEnd(t, randPoints, 'randPoints');
+  testStartEnd(t, randPointsClamped, 'randPointsClamped');
+  testStartEnd(t, randPointsQuint, 'randPointsQuint');
+  testStartEnd(t, randPointsTaperIn, 'randPointsTaperIn');
+  testStartEnd(t, randPointsTaperOut, 'randPointsTaperOut');
 
   renderEase(randPoints, 'random points');
   renderEase(randPointsClamped, 'random points clamped');
