@@ -6,7 +6,17 @@ This is a set of easing equations which are outside of standard Penner easing eq
 
 ## Usage
 
-### var stepped = require('fance-eases/stepped')([opt])
+### `var bezier = require('fancy-eases')([opt])`
+
+![bezier](./images/bezier.png)
+*`Will render eases based on cubic bezier curves`*
+
+This function will 
+
+Simply wraps the (`cubic-bezier`)[http://www.npmjs.com/cubic-bezier] module to have a consistent api with the rest of the fancy eases.
+
+
+### `var stepped = require('fancy-eases/stepped')([opt])`
 
 ![stepped](./images/stepped.png)
 *`Rendering with two steps`*

@@ -1,8 +1,8 @@
-module.exports = function(options) {
-  options = options || {};
+module.exports = function(opts) {
+  opts = opts || {};
 
-  var steps = options.steps || 1;
-  var ease = options.ease || function(t) {
+  var steps = opts.steps || 1;
+  var ease = opts.ease || function(t) {
     return t;
   };
   var step = 1 / steps;
