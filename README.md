@@ -27,18 +27,24 @@ Optionally you can pass in the following options:
 
 *`Will render a series points which define an easing equation`*
 
+![points](./images/pointsElastic.png)
+
+*`This is the exact same graph as above with an elastic out ease equation added
+to the second keyframe`*
+
 Returns a function that will perform eases based on custom points you've passed in.
 
 Options:
 - `points` a two dimensional array that is formatted in the following way:
 ```javascript
 [
-    [ value, time ],
-    [ value, time ],
-    [ value, time ]
+    [ value, time, ease ],
+    [ value, time, ease ],
+    [ value, time, ease ]
 ]
 ```
-Where `value` is a value the interpolation amount at the time defined by `time`.
+
+In the above arrays `value` is a value the interpolation amount at the time defined by `time` and `ease` is an optional ease function which will be used to to the following key frame. `values`'s are typically between 0-1 however values less than 0 or greater than 1 are also acceptable. Optionally an ease function can be passed as the third parameter for more complex graphs.
 
 
 

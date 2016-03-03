@@ -29,12 +29,9 @@ module.exports = function(opts) {
       }
     }
 
+    ease = start[ 2 ] || function(t) { return t; };
     tLerp = Math.max((t - start[ 1 ]) / (end[ 1 ] - start[ 1 ]), 0);
 
-    if(t === 1) {
-      // console.log((end[ 0 ] - start[ 0 ]) * tLerp + start[ 0 ]);
-    }
-    
-    return (end[ 0 ] - start[ 0 ]) * tLerp + start[ 0 ];
+    return (end[ 0 ] - start[ 0 ]) * ease(tLerp) + start[ 0 ];
   };
 };
