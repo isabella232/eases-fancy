@@ -68,9 +68,11 @@ Options which can be passed to `points-random`:
 ### `var stepped = require('eases-fancy/stepped')([opts])`
 
 ![stepped](./images/stepped.png)
+
 *`Rendering with two steps`*
 
 ![stepped expo](./images/steppedExpo.png)
+
 *`Rendering with two steps and ease expo`*
 
 Returns an easing function for stepped eases with the following optional options:
@@ -78,6 +80,22 @@ Returns an easing function for stepped eases with the following optional options
 - `ease` an ease equation which will modify the original steps.
 
 [![NPM](https://nodei.co/npm/eases-fancy.png)](https://www.npmjs.com/package/eases-fancy)
+
+### `var quantize = require('eases-fancy/quantize')([opts])`
+
+![stepped](./images/quantize.png)
+
+*`Rendering quantize with a linear interpolated graph`*
+
+![stepped](./images/quantizePoints.png)
+
+*`Rendering quantize with a custom ease using the above mentioned points`*
+
+`quantize` will make all values be either 0 or 1. This could be used for instance to blink on and off something.
+
+Options:
+- `ease` an ease function we'd like to quantize. Default `linear`
+- `edge` a threshould value from which to either set values to 0 or 1. For instance if edge is 0.3 all values less than 0.3 will produce 0 and all values greater will produce 1. Default `0.5`.
 
 ## License
 
