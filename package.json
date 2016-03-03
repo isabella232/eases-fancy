@@ -1,5 +1,5 @@
 {
-  "name": "fancy-eases",
+  "name": "eases-fancy",
   "version": "1.0.0",
   "description": "This is a set of easing equations which are outside of standard Penner easing equations",
   "main": "index.js",
@@ -29,10 +29,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Jam3/fancy-eases.git"
+    "url": "git://github.com/Jam3/eases-fancy.git"
   },
-  "homepage": "https://github.com/Jam3/fancy-eases",
+  "homepage": "https://github.com/Jam3/eases-fancy",
   "bugs": {
-    "url": "https://github.com/Jam3/fancy-eases/issues"
+    "url": "https://github.com/Jam3/eases-fancy/issues"
   }
 }

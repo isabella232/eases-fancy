@@ -1,4 +1,4 @@
-# fancy-eases
+# eases-fancy
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
@@ -6,7 +6,7 @@ This is a set of easing equations which are outside of standard Penner easing eq
 
 ## Usage
 
-### `var bezier = require('fancy-eases/bezier')([opts])`
+### `var bezier = require('eases-fancy/bezier')([opts])`
 
 ![bezier](./images/bezier.png)
 
@@ -21,7 +21,7 @@ Optionally you can pass in the following options:
 - `precision` the higher the value the more precise the curve will be default value `1000`.
 
 
-### `var points = require('fancy-eases/points')([opts])`
+### `var points = require('eases-fancy/points')([opts])`
 
 ![points](./images/points.png)
 
@@ -48,7 +48,7 @@ In the above arrays `value` is a value the interpolation amount at the time defi
 
 
 
-### `var pointsRandom = require('fancy-eases/points-random')([opts])`
+### `var pointsRandom = require('eases-fancy/points-random')([opts])`
 
 ![random quint](./images/randomQuint.png)
 
@@ -65,7 +65,7 @@ Options which can be passed to `points-random`:
 
 
 
-### `var stepped = require('fancy-eases/stepped')([opts])`
+### `var stepped = require('eases-fancy/stepped')([opts])`
 
 ![stepped](./images/stepped.png)
 *`Rendering with two steps`*
@@ -77,8 +77,8 @@ Returns an easing function for stepped eases with the following optional options
 - `steps` the number of steps you'd like to have. The above is with two steps. Default value `1`
 - `ease` an ease equation which will modify the original steps.
 
-[![NPM](https://nodei.co/npm/fancy-eases.png)](https://www.npmjs.com/package/fancy-eases)
+[![NPM](https://nodei.co/npm/eases-fancy.png)](https://www.npmjs.com/package/eases-fancy)
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/Jam3/fancy-eases/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/Jam3/eases-fancy/blob/master/LICENSE.md) for details.
