@@ -24,7 +24,7 @@
     "testBrowser": "budo test/ --live --open"
   },
   "keywords": [
-    "easing,eases,penner,animation"
+    "easing,eases,penner,animation,animations,tweens,tweening,functions,function,anim,lerp"
   ],
   "repository": {
     "type": "git",
