@@ -6,6 +6,17 @@ This is a set of easing equations which are outside of standard Penner easing eq
 
 ## Usage
 
+You can require in individual functions using require statements before or access them directly by requiring in `'eases-fancy'`.
+
+Example:
+```javascript
+var mod = require('ease-fancy/mod');
+// or by doing
+var mod = require('eases-fancy').mod;
+```
+
+[![NPM](https://nodei.co/npm/eases-fancy.png)](https://www.npmjs.com/package/eases-fancy)
+
 ### `var bezier = require('eases-fancy/bezier')([opts])`
 
 ![bezier](./images/bezier.png)
@@ -78,9 +89,7 @@ Options which can be passed to `points-random`:
 Returns an easing function for stepped eases with the following optional options:
 - `steps` the number of steps you'd like to have. The above is with two steps. Default value `1`
 - `ease` an ease equation which will modify the original steps.
-
-[![NPM](https://nodei.co/npm/eases-fancy.png)](https://www.npmjs.com/package/eases-fancy)
-
+- 
 ### `var quantize = require('eases-fancy/quantize')([opts])`
 
 ![stepped](./images/quantize.png)
@@ -96,6 +105,22 @@ Returns an easing function for stepped eases with the following optional options
 Options:
 - `ease` an ease function we'd like to quantize. Default `linear`
 - `edge` a threshould value from which to either set values to 0 or 1. For instance if edge is 0.3 all values less than 0.3 will produce 0 and all values greater will produce 1. Default `0.5`.
+
+### `var mod = require('eases-fancy/mod')([opts])`
+
+![stepped](./images/mod.png)
+
+*`Rendering mod with defaults. (repeats linear ease over and over)`*
+
+![stepped](./images/modEase.png)
+
+*`Rendering mod with a custom ease.`*
+
+`mod` will repeat an ease function the number of times you ask it to.
+
+Options for `mod`:
+- `ease` ease function which will be repeated. Default `linear`.
+- `repeat` count times you'd like to repeat the ease function. Default `5`
 
 ## License
 

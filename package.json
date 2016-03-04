@@ -10,12 +10,11 @@
     "url": "https://github.com/mikkoh"
   },
   "dependencies": {
-    "cubic-bezier": "^0.1.2",
-    "ease-preview": "^1.0.2"
+    "cubic-bezier": "^0.1.2"
   },
   "devDependencies": {
     "budo": "^8.0.4",
-    "ease-preview": "^1.0.0",
+    "ease-preview": "^1.0.2",
     "eases": "^1.0.8",
     "tape": "^4.4.0",
     "test-fuzzy-array": "^1.0.1"

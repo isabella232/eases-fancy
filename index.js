@@ -1,4 +1,8 @@
 module.exports = {
-  stepped: require('./stepped'),
-  bezier: require('./bezier')
+  bezier: require('./bezier'),
+  mod: require('./mod'),
+  points: require('./points'),
+  pointsRandom: require('./points-random'),
+  quantize: require('./quantize'),
+  stepped: require('./stepped')
 };
